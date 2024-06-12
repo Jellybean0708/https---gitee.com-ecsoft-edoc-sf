@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaperOrient__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( PaperHeight__c &gt;= PaperWidth__c,&quot;縦&quot;,
+IF( PaperHeight__c &lt; PaperWidth__c,&quot;横&quot;,&quot;&quot;))</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>用紙の向き</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

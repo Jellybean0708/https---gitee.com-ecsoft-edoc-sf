@@ -1,0 +1,68 @@
+{
+  "trailingComma": "none",
+  "plugins": [
+    "prettier-plugin-apex",
+    "@prettier/plugin-xml"
+  ],
+  "overrides": [
+    {
+      "files": "**/lwc/**/*.html",
+      "options": {
+        "parser": "lwc",
+        "printWidth": 120,
+        "tabWidth": 4,
+        "bracketSameLine": true
+      }
+    },
+    {
+      "files": "**/lwc/**/*.js",
+      "options": {
+        "parser": "babel",
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": "**/*.{cls,trigger,apex}",
+      "options": {
+        "parser": "apex",
+        "apexInsertFinalNewline": true,
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": "*.{cmp,page,component}",
+      "options": {
+        "parser": "html",
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": "**/aura/**/*.cmp",
+      "options": {
+        "parser": "aura",
+        "printWidth": 120,
+        "tabWidth": 4,
+        "bracketSameLine": true
+      }
+    },
+    {
+      "files": "**/aura/**/*.js",
+      "options": {
+        "parser": "babel",
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    },
+    {
+      "files": "**/aura/**/*.css",
+      "options": {
+        "parser": "babel",
+        "printWidth": 120,
+        "tabWidth": 4
+      }
+    }
+  ]
+}

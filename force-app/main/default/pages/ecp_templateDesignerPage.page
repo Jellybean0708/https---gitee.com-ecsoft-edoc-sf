@@ -1,0 +1,12 @@
+<apex:page showHeader="false"
+  standardcontroller="ECP_PrintTemplate__c"
+  cache="false"
+  standardStylesheets="false"
+  sidebar="false"
+  applyBodyTag="false"
+>
+  <title>eDocument designer</title>
+  <c:ecp_templateDesignerComp recId="{!ECP_PrintTemplate__c.Id}"
+    isClone="{!$CurrentPage.parameters.clone}"
+  />
+</apex:page>

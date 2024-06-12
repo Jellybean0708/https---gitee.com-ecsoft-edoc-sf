@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>PaperType__c</fullName>
+    <externalId>false</externalId>
+    <formula>IF( ISBLANK(PaperSize__c  ) ,&quot;&quot;,PaperSize__c  &amp;&quot; (h*w=&quot; + TEXT(PaperHeight__c ) &amp; &quot;mm*&quot; &amp; TEXT(PaperWidth__c) &amp; &quot;mm)&quot; )</formula>
+    <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+    <label>用紙タイプ</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>false</unique>
+</CustomField>

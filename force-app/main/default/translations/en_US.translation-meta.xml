@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- EC Report Designer --></label>
+        <name>EcDesignerApp</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- print css URL(const) --></label>
+        <name>ECP_CssUrlSuffix</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- テンプレート名を入力 --></label>
+        <name>ECP_DesignerComp001</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 保存成功。 --></label>
+        <name>ECP_DesignerComp002</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- テンプレート名を入力してください。 --></label>
+        <name>ECP_DesignerComp003</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 入力されたテンプレート名は既に存在します。確認してください。 --></label>
+        <name>ECP_DesignerComp004</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 请输入模版名 --></label>
+        <name>ECP_DesignerComp005</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 保存成功。 --></label>
+        <name>ECP_DesignerComp006</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 请输入模板名。 --></label>
+        <name>ECP_DesignerComp007</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 输入的模版名已存在，请确认。 --></label>
+        <name>ECP_DesignerComp008</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Input template name --></label>
+        <name>ECP_DesignerComp009</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save Success! --></label>
+        <name>ECP_DesignerComp010</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please input the template name. --></label>
+        <name>ECP_DesignerComp011</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Inputted template name already exists, please confirm. --></label>
+        <name>ECP_DesignerComp012</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 選択されたマシンIdは存在しません。確認してください！ --></label>
+        <name>ECP_DesignerComp013</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 选中的machineId不存在, 请确认！ --></label>
+        <name>ECP_DesignerComp014</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selected machineId does not exists, please confirm. --></label>
+        <name>ECP_DesignerComp015</name>
+    </customLabels>
+    <customLabels>
+        <label>eDocument Quick Start</label>
+        <name>ECP_HomeTab001</name>
+    </customLabels>
+    <customLabels>
+        <label>ANALYSIS NEEDS</label>
+        <name>ECP_HomeTab002</name>
+    </customLabels>
+    <customLabels>
+        <label>You need to organize the detailed requirements of the printing template for your communication with the customer.</label>
+        <name>ECP_HomeTab003</name>
+    </customLabels>
+    <customLabels>
+        <label>DESIGN</label>
+        <name>ECP_HomeTab004</name>
+    </customLabels>
+    <customLabels>
+        <label>Design the required templates in eDocument according to your requirements.</label>
+        <name>ECP_HomeTab005</name>
+    </customLabels>
+    <customLabels>
+        <label>Quick Start</label>
+        <name>ECP_HomeTab006</name>
+    </customLabels>
+    <customLabels>
+        <label>CODING</label>
+        <name>ECP_HomeTab007</name>
+    </customLabels>
+    <customLabels>
+        <label>Query the required business data in an Apex class.</label>
+        <name>ECP_HomeTab008</name>
+    </customLabels>
+    <customLabels>
+        <label>Help</label>
+        <name>ECP_HomeTab009</name>
+    </customLabels>
+    <customLabels>
+        <label>OUTPUT</label>
+        <name>ECP_HomeTab010</name>
+    </customLabels>
+    <customLabels>
+        <label>Use PDF output and preview print components to achieve print and PDF output.</label>
+        <name>ECP_HomeTab011</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Template Center Url Suffix(const) --></label>
+        <name>ECP_TemplateUrlSuffix</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- EC Report Designer --></label>
+        <name>EC_Report_Designer</name>
+    </customTabs>
+</Translations>

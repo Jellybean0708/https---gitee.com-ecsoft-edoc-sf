@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <customApplications>
+        <description xsi:nil="true"/>
+        <label><!-- EC Report Designer --></label>
+        <name>EcDesignerApp</name>
+    </customApplications>
+    <customLabels>
+        <label><!-- print css URL(const) --></label>
+        <name>ECP_CssUrlSuffix</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- テンプレート名を入力 --></label>
+        <name>ECP_DesignerComp001</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 保存成功。 --></label>
+        <name>ECP_DesignerComp002</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- テンプレート名を入力してください。 --></label>
+        <name>ECP_DesignerComp003</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 入力されたテンプレート名は既に存在します。確認してください。 --></label>
+        <name>ECP_DesignerComp004</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 请输入模版名 --></label>
+        <name>ECP_DesignerComp005</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 保存成功。 --></label>
+        <name>ECP_DesignerComp006</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 请输入模板名。 --></label>
+        <name>ECP_DesignerComp007</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 输入的模版名已存在，请确认。 --></label>
+        <name>ECP_DesignerComp008</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Input template name --></label>
+        <name>ECP_DesignerComp009</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Save Success! --></label>
+        <name>ECP_DesignerComp010</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Please input the template name. --></label>
+        <name>ECP_DesignerComp011</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Inputted template name already exists, please confirm. --></label>
+        <name>ECP_DesignerComp012</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 選択されたマシンIdは存在しません。確認してください！ --></label>
+        <name>ECP_DesignerComp013</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- 选中的machineId不存在, 请确认！ --></label>
+        <name>ECP_DesignerComp014</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Selected machineId does not exists, please confirm. --></label>
+        <name>ECP_DesignerComp015</name>
+    </customLabels>
+    <customLabels>
+        <label>eDocument快速开始</label>
+        <name>ECP_HomeTab001</name>
+    </customLabels>
+    <customLabels>
+        <label>需求整理</label>
+        <name>ECP_HomeTab002</name>
+    </customLabels>
+    <customLabels>
+        <label>与客户沟通，整理打印模板的详细需求。</label>
+        <name>ECP_HomeTab003</name>
+    </customLabels>
+    <customLabels>
+        <label>设计</label>
+        <name>ECP_HomeTab004</name>
+    </customLabels>
+    <customLabels>
+        <label>在设计器中设计所需要的模板。</label>
+        <name>ECP_HomeTab005</name>
+    </customLabels>
+    <customLabels>
+        <label>开始设计</label>
+        <name>ECP_HomeTab006</name>
+    </customLabels>
+    <customLabels>
+        <label>代码</label>
+        <name>ECP_HomeTab007</name>
+    </customLabels>
+    <customLabels>
+        <label>使用Apex Class组装所需要的数据模型。</label>
+        <name>ECP_HomeTab008</name>
+    </customLabels>
+    <customLabels>
+        <label>帮助</label>
+        <name>ECP_HomeTab009</name>
+    </customLabels>
+    <customLabels>
+        <label>输出</label>
+        <name>ECP_HomeTab010</name>
+    </customLabels>
+    <customLabels>
+        <label>直接输出PDF，或者使用我们提供的组件实现打印功能。</label>
+        <name>ECP_HomeTab011</name>
+    </customLabels>
+    <customLabels>
+        <label><!-- Template Center Url Suffix(const) --></label>
+        <name>ECP_TemplateUrlSuffix</name>
+    </customLabels>
+    <customTabs>
+        <label><!-- EC Report Designer --></label>
+        <name>EC_Report_Designer</name>
+    </customTabs>
+</Translations>

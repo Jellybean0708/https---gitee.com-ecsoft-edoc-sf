@@ -1,0 +1,114 @@
+<apex:component access="global" controller="ECP_PrintPreviewCompCtrl">
+  <apex:attribute name="templateName"
+    type="String[]"
+    description="模板名"
+    assignTo="{!templateNameEcp}"
+    required="required"
+    access="global"
+  ></apex:attribute>
+  <apex:attribute name="printSeviceName"
+    type="String"
+    description="印刷サービス名"
+    assignTo="{!printSeviceNameEcp}"
+    required="required"
+    access="global"
+  ></apex:attribute>
+  <apex:attribute name="dataSource"
+    default=""
+    type="String"
+    description="组装后的数据JSON"
+    access="global"
+  ></apex:attribute>
+  <apex:attribute name="machineId"
+    default=""
+    type="String"
+    description="マシンId(云打印)（用于打印机选择）"
+    access="global"
+  ></apex:attribute>
+  <apex:attribute name="isDirectlyPrint"
+    default="false"
+    type="String"
+    description="直接打印"
+    access="global"
+  ></apex:attribute>
+  {!initAction}
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" media="print" href="{!URLFOR($Resource.ecp_templateDesigner, '/print-lock.css')}" />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/jquery.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/JsBarcode.all.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/jquery.minicolors.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/socket.io.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/canvg.umd.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/jspdf.umd.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/html-to-image.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/ecprint.hiprint.umd.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/FileSaver.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/interact.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/jsonlint.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/linter.min.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/ecprint.plugin.eleBwip.umd.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/ecprint.plugin.eleFabric.umd.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/ecprint.plugin.eleEcharts.umd.js')}"
+  />
+  <apex:stylesheet value="{!URLFOR($Resource.ecp_templateDesigner, 'css/iconfont.css')}"
+  />
+  <apex:stylesheet value="{!URLFOR($Resource.ecp_templateDesigner, 'css/designer.css')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/ecprint.umd.js')}"
+  />
+  <apex:includeScript value="{!URLFOR($Resource.ecp_templateDesigner, 'js/ecp_printPreview.js')}"
+  />
+    
+
+    <div id="app" style="display: flex; justify-content: center">
+      <div id="preview_content"></div>
+    </div>
+    <script>
+      var printConfigStr = "{!JSENCODE(printConfigStr)}";
+      var dataSource = "{!JSENCODE(dataSource)}";
+      var isDirectlyPrint = "{!JSENCODE(isDirectlyPrint)}";
+      var cssBaseUrl = "{!JSENCODE(cssBaseUrl)}";
+      var contractId = "{!JSENCODE(contractId)}";
+      var serviceURL = "{!JSENCODE(serviceURL)}";
+      var machineId = "{!JSENCODE(machineId)}";
+      var cssUrl = '{!$Label.ECP_CssUrlSuffix}';
+      var errmsg_ja = '{!$Label.ECP_DesignerComp013}';
+      var errmsg_cn = '{!$Label.ECP_DesignerComp014}';
+      var errmsg_en = '{!$Label.ECP_DesignerComp015}';
+
+      // 使用 $document.ready() 包裹 printPreview.init 调用
+      $(document).ready(function() {
+          // 在页面加载完成后执行以下操作
+          printPreview.init(printConfigStr, dataSource, isDirectlyPrint, cssBaseUrl, contractId, serviceURL, machineId, cssUrl, errmsg_ja, errmsg_cn, errmsg_en);
+      });
+      function ecp_exportPdf(name) {
+        return printPreview.ecp_exportPdfData(dataSource, name);
+      }
+      function ecp_printData() {
+        printPreview.ecp_printData(dataSource, cssBaseUrl, contractId, serviceURL, machineId, cssUrl);
+      }
+      function ecp_exportPdfObject(name) {
+        return printPreview.ecp_exportPdfObject(dataSource, name);
+      }
+      function ecp_browserPrint() {
+        return printPreview.ecp_browserPrint(dataSource);
+      }
+  </script>
+  
+</apex:component>

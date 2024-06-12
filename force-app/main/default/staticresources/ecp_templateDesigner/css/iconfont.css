@@ -1,0 +1,47 @@
+@font-face {
+  font-family: "sv-print-demo"; /* Project id 4274279 */
+  src: url("iconfont.woff2?t=1696570000146") format("woff2"),
+    url("iconfont.woff?t=1696570000146") format("woff"),
+    url("iconfont.ttf?t=1696570000146") format("truetype");
+}
+
+.svp-demo {
+  font-family: "sv-print-demo" !important;
+  /* font-size: 16px; */
+  font-size: 40px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.sv-chart-funnel:before {
+  content: "\e618";
+}
+
+.sv-chart-scatter:before {
+  content: "\e849";
+}
+
+.sv-chart-gauge:before {
+  content: "\eb94";
+}
+
+.sv-chart-radar:before {
+  content: "\e605";
+}
+
+.sv-chart-bar:before {
+  content: "\e67e";
+}
+
+.sv-chart-line:before {
+  content: "\eb96";
+}
+
+.sv-chart:before {
+  content: "\e6d8";
+}
+
+.sv-chart-pie:before {
+  content: "\e657";
+}

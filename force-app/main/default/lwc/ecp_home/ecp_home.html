@@ -1,0 +1,112 @@
+<template>
+    <template if:true={isLoading}>
+        <lightning-spinner alternative-text="Loading" size="large"></lightning-spinner>
+    </template>		
+    <div class="ecp-top-background" id="naggare_bunsyo">
+        <div class="ecp-container-top">
+            <span class="ecp-top-span-title2">
+                <!-- EC Report Designerのご利用の流れ -->
+                {CUSTOM.Label001}
+            </span>
+            <div class="ecp-div-top-explain-box1">
+                <div class="ecp-div-top-explain-box-childdiv1">
+                    <div>
+                        <div class="ecptop-div-maru-oya1-oya">
+                            <div class="ecptop-div-maru-oya1">
+                                <div class="ecptop-div-maru1"><img src={icon1} /></div>
+                            </div>
+                            <div class="ecptop-div-maru-oya1-number">01</div>
+                        </div>
+                        <div
+                            class="ecp-div-top-explain-box-childdiv-title1 ecp--top-border-right ecp--top-border-left"
+                        >
+                            <!-- 要件整理 -->
+                            {CUSTOM.Label002}
+                        </div>
+                        <div
+                            class="ecp-div-top-explain-box-childdiv-bunsyo1 ecp--top-border-right ecp--top-border-left"
+                        >
+                            <!-- お客様とのコミュニケーションについて、印刷テンプレートの詳細な要件を整理する必要があります。 -->
+                            {CUSTOM.Label003}
+                        </div>
+                    </div>
+                    <span class="ecp--top-icon-right-sankaku"></span>
+                </div>
+                <div class="ecp-div-top-explain-box-childdiv1">
+                    <div>
+                        <div class="ecptop-div-maru-oya1-oya">
+                            <div class="ecptop-div-maru-oya1">
+                                <div class="ecptop-div-maru1"><img src={icon2} /></div>
+                            </div>
+                            <div class="ecptop-div-maru-oya1-number">02</div>
+                        </div>
+                        <div class="ecp-div-top-explain-box-childdiv-title1 ecp--top-border-right">
+                            <!-- デザイン -->
+                            {CUSTOM.Label004}
+                        </div>
+                        <div class="ecp-div-top-explain-box-childdiv-bunsyo1 ecp--top-border-right">
+                            <!-- ECP Designerで必要なテンプレートをお客様の要望に基づいて設計してください。 -->
+                            {CUSTOM.Label005}
+                        </div>
+                        <div class="ecp-top-button-flex-faq">
+                            <a class="ecp-kyotuu-button3" href="javascript:void 0" onclick={handleOpenDesigner}>
+                                <span class="span-right-icon5">
+                                    <!-- クイックスタート -->
+                                    {CUSTOM.Label006}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="ecp--top-icon-right-sankaku"></span>
+                </div>
+                <div class="ecp-div-top-explain-box-childdiv1">
+                    <div>
+                        <div class="ecptop-div-maru-oya1-oya">
+                            <div class="ecptop-div-maru-oya1">
+                                <div class="ecptop-div-maru1"><img src={icon3} /></div>
+                            </div>
+                            <div class="ecptop-div-maru-oya1-number">03</div>
+                        </div>
+                        <div class="ecp-div-top-explain-box-childdiv-title1 ecp--top-border-right">
+                            <!-- コード -->
+                            {CUSTOM.Label007}
+                        </div>
+                        <div class="ecp-div-top-explain-box-childdiv-bunsyo1 ecp--top-border-right">
+                            <!-- Apexクラスで必要なビジネスデータをクエリする。 -->
+                            {CUSTOM.Label008}
+                        </div>
+                        <div class="ecp-top-button-flex-faq">
+                            <a class="ecp-kyotuu-button3" href="https://ecloudsoft.github.io/ecprint/" target="_blank">
+                                <span class="span-right-icon5">
+                                    <!-- ヘルプ -->
+                                    {CUSTOM.Label009}
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="ecp--top-icon-right-sankaku"></span>
+                </div>
+                <div class="ecp-div-top-explain-box-childdiv1">
+                    <div>
+                        <div class="ecptop-div-maru-oya1-oya">
+                            <div class="ecptop-div-maru-oya1">
+                                <div class="ecptop-div-maru1"><img src={icon4}  /></div>
+                            </div>
+                            <div class="ecptop-div-maru-oya1-number">04</div>
+                        </div>
+                        <div class="ecp-div-top-explain-box-childdiv-title1 ecp--top-border-right">
+                            <!-- 出力 -->
+                            {CUSTOM.Label010}
+                        </div>
+                        <div class="ecp-div-top-explain-box-childdiv-bunsyo1 ecp--top-border-right">
+                            <!-- PDF出力やプレビュープリントコンポーネントを使用して、印刷やPDF出力を実現します。 -->
+                            {CUSTOM.Label011}
+                        </div>
+                    </div>
+                    <span></span>
+                </div>
+
+            </div>
+        </div>
+      </div>
+</template>

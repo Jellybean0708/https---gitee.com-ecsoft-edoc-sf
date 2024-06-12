@@ -1,0 +1,22 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "package": "eDocument",
+      "versionName": "eDocument",
+      "versionNumber": "0.1.0.NEXT",
+      "postInstallScript": "ECP_InstallClass",
+      "versionDescription": "",
+      "ancestorVersion": "HIGHEST"
+    }
+  ],
+  "namespace": "edoc",
+  "sfdcLoginUrl": "https://login.salesforce.com",
+  "sourceApiVersion": "59.0",
+  "packageAliases": {
+    "eDocument": "0HoIS0000004CAk0AM",
+    "eDocument@0.1.0": "04tIS000000DAtHYAW",
+    "eDocument@0.2.0": "04tIS000000DAtMYAW",
+    "eDocument@0.3.0": "04tIS000000DAxeYAG"
+  }
+}
